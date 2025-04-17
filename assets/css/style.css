@@ -1,0 +1,267 @@
+/**
+ * PHP Exam System - Custom CSS
+ */
+
+/* Global Styles */
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --success-color: #198754;
+    --info-color: #0dcaf0;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+    
+    --primary-hover: #0b5ed7;
+    --dark-hover: #424649;
+    
+    --border-radius: 0.375rem;
+    --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    --transition: all 0.3s ease-in-out;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+/* Bootstrap Overrides */
+.btn {
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+}
+
+.card {
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+}
+
+.navbar {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+/* Home Page Styles */
+.hero-section {
+    padding: 5rem 0;
+    background-color: var(--light-color);
+}
+
+.step-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+/* Login/Register Page Styles */
+.login-container,
+.register-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* Admin Dashboard Styles */
+.dashboard-stats .card {
+    transition: var(--transition);
+}
+
+.dashboard-stats .card:hover {
+    transform: translateY(-5px);
+}
+
+.dashboard-stats .card i {
+    font-size: 2.5rem;
+}
+
+/* Student Dashboard Styles */
+.exam-card {
+    transition: var(--transition);
+}
+
+.exam-card:hover {
+    transform: translateY(-5px);
+}
+
+.status-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Exam Taking Interface */
+.question-navigation .nav-link {
+    margin: 0.2rem;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.question-navigation .nav-link.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.question-navigation .nav-link.marked {
+    background-color: var(--warning-color);
+    color: black;
+}
+
+.question-navigation .nav-link.answered {
+    background-color: var(--success-color);
+    color: white;
+}
+
+.timer-container {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.timer-warning {
+    color: var(--warning-color);
+}
+
+.timer-danger {
+    color: var(--danger-color);
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Dark Mode Styles */
+[data-bs-theme="dark"] {
+    --light-color: #343a40;
+}
+
+[data-bs-theme="dark"] .card {
+    background-color: #2b3035;
+}
+
+[data-bs-theme="dark"] .card-header {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+[data-bs-theme="dark"] .table {
+    --bs-table-bg: transparent;
+    --bs-table-striped-bg: rgba(255, 255, 255, 0.05);
+}
+
+/* Light Mode Text Contrast Fixes */
+[data-bs-theme="light"] {
+    --bs-body-color: #212529;
+}
+
+[data-bs-theme="light"] .card {
+    background-color: #ffffff;
+    color: #212529;
+}
+
+[data-bs-theme="light"] .card .text-white:not(.bg-primary *) {
+    color: #212529 !important;
+}
+
+[data-bs-theme="light"] .text-white:not(.bg-primary *):not(.btn-primary *) {
+    color: #212529 !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-section {
+        padding: 3rem 0;
+    }
+    
+    .dashboard-stats .card i {
+        font-size: 2rem;
+    }
+}
+
+/* Animations */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.slide-in-right {
+    animation: slideInRight 0.5s ease-in;
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+    
+    body {
+        font-size: 12pt;
+    }
+    
+    .container {
+        width: 100%;
+        max-width: none;
+    }
+}

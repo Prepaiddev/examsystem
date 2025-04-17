@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Elements -->
+  <circle cx="300" cy="200" r="150" fill="#f0f7ff" />
+  <circle cx="100" cy="350" r="50" fill="#e6f0ff" />
+  <circle cx="500" cy="50" r="30" fill="#e6f0ff" />
+  
+  <!-- Laptop Base -->
+  <rect x="200" y="220" width="200" height="10" rx="2" fill="#4e5d78" />
+  <path d="M190 220H410V222C410 226.418 406.418 230 402 230H198C193.582 230 190 226.418 190 222V220Z" fill="#394766" />
+  
+  <!-- Laptop Screen -->
+  <rect x="220" y="130" width="160" height="90" rx="4" fill="#4e5d78" />
+  <rect x="225" y="135" width="150" height="80" rx="2" fill="#ffffff" />
+  
+  <!-- Content on Screen -->
+  <rect x="235" y="145" width="130" height="10" rx="2" fill="#6c63ff" />
+  <rect x="235" y="160" width="100" height="5" rx="2" fill="#e0e0e0" />
+  <rect x="235" y="170" width="110" height="5" rx="2" fill="#e0e0e0" />
+  <rect x="235" y="180" width="90" height="5" rx="2" fill="#e0e0e0" />
+  
+  <!-- Check Marks / Quiz Elements -->
+  <circle cx="245" cy="200" r="8" fill="#4CAF50" />
+  <path d="M241 200L244 203L250 197" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <circle cx="275" cy="200" r="8" fill="#f44336" />
+  <path d="M271 196L279 204M271 204L279 196" stroke="white" stroke-width="2" stroke-linecap="round" />
+  
+  <circle cx="305" cy="200" r="8" fill="#6c63ff" />
+  <path d="M305 196V204M301 200H309" stroke="white" stroke-width="2" stroke-linecap="round" />
+  
+  <!-- Person -->
+  <circle cx="460" cy="180" r="30" fill="#ffb980" />
+  <path d="M440 240C440 218.909 456.909 202 478 202C499.091 202 516 218.909 516 240V260H440V240Z" fill="#6c63ff" />
+  
+  <!-- Graduation Cap -->
+  <path d="M460 140L490 155L460 170L430 155L460 140Z" fill="#4e5d78" />
+  <path d="M460 170V185" stroke="#4e5d78" stroke-width="4" stroke-linecap="round" />
+  <path d="M490 155V170L460 185L430 170V155" stroke="#4e5d78" stroke-width="2" />
+  <circle cx="460" cy="140" r="5" fill="#4e5d78" />
+  
+  <!-- Document/Certificate -->
+  <rect x="90" y="170" width="70" height="90" rx="4" fill="white" stroke="#4e5d78" stroke-width="2" />
+  <path d="M100 190H150M100 210H130M100 230H140" stroke="#e0e0e0" stroke-width="4" stroke-linecap="round" />
+  <path d="M125 150L135 170H115L125 150Z" fill="#ffb980" />
+  
+  <!-- Graduation medal -->
+  <circle cx="125" cy="180" r="10" fill="#ffd700" />
+  <path d="M125 175L127 180H133L128 183L130 188L125 185L120 188L122 183L117 180H123L125 175Z" fill="#ffcc00" />
+  
+  <!-- Decorative Elements -->
+  <circle cx="50" cy="100" r="20" fill="#6c63ff" opacity="0.2" />
+  <circle cx="550" cy="300" r="15" fill="#6c63ff" opacity="0.2" />
+  <circle cx="500" cy="120" r="10" fill="#ffb980" opacity="0.4" />
+  <circle cx="80" cy="280" r="8" fill="#ffb980" opacity="0.4" />
+  
+  <!-- Abstract Lines -->
+  <path d="M20 250C50 230 70 260 100 240" stroke="#e0e0e0" stroke-width="2" stroke-linecap="round" />
+  <path d="M500 80C530 60 550 90 580 70" stroke="#e0e0e0" stroke-width="2" stroke-linecap="round" />
+</svg>
